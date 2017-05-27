@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="posts">
+  <h1>{{ page.title }}</h1>
+    <ul>
+      {% for post in site.posts limit:3 %}
+      <li>
+        <span>
+          {{ post.date | date_to_string }}
+        </span>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+</div>
+
+<h2><a href="{{ site.baseurl }}/diaryList.html" title="日記一覧">日記一覧</a></h2>
+<ul>
+  {% for page in site.posts limit:5 %}
+    <li>{% for category in page.categories %}
+      <a href="{{ site.baseurl }}/category.html#{{ category }}" title="{{ category }}">{{ category }}</a>
+    {% endfor %}
+    <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a> (<time>{{ page.date | date: '%Y-%m-%d' }}</time>)</li>
+  {% endfor %}
+{% if site.posts | size > 5 %}<li><a href="{{ site.baseurl }}/diaryList.html">少し昔の記事を見る</a></li>{% endif %}
+</ul>

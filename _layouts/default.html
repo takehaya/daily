@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/site.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  </head>
+  <body>
+    <h1><a href="{{ site.baseurl }}/" title="{{ site.title }}">{{ site.title }}</a></h1>
+    {{ content }}
+    <small>
+      <a href="{{ site.baseurl }}/" title="{{ site.title }}">{{ site.title }}</a>
+    </small>
+  </body>
+</html>

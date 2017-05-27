@@ -1,0 +1,222 @@
+@charset 'utf-8';
+
+body {
+    width: 90%;
+    font-style: 'Noto Sans Japanese';
+    max-width: 50em;
+    margin: 1em auto;
+    line-height: 2.0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400');
+}
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 100;
+    src: url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Thin.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Thin.woff) format('woff'), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Thin.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 200;
+    src: url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Light.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Light.woff) format('woff'), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 300;
+    src: url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.woff) format('woff'), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 400;
+    src: local('NotoSansJP-Regular.otf'), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff) format('woff'), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 500;
+    src: url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Medium.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Medium.woff) format('woff'), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Medium.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 700;
+    src: url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff) format('woff'), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 900;
+    src: url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Black.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Black.woff) format('woff'), url(//fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Black.otf) format('opentype');
+}
+
+background-color : #E3F2FD
+
+h1,h2,h3,h4 {
+    margin: 1em 0;
+    font-weight: 400;
+}
+
+ul li {
+    list-style: square;
+}
+
+dt {
+    margin: 1em 0;
+}
+
+dd {
+    display: list-item;
+    margin-left: 2.5em;
+    list-style: square;
+}
+
+hr {
+    margin: 2em auto;
+    border: 0;
+    border-top: 2px dotted #a6a6a6;
+}
+
+p {
+    text-indent: 1em;
+}
+
+a {
+    padding: .2em 0;
+    text-decoration: none;
+    color: #888;
+    border-bottom: 2px dotted #a6a6a6;
+}
+
+a:visited,
+a:hover {
+    color: #000;
+}
+
+a:hover {
+    border-bottom: 2px solid #888;
+}
+
+a:hover img {
+    opacity: 0.7;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+@media (max-width: 40em) {
+    img {
+        width: 100%;
+        max-height: 100%;
+    }
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: left;
+    padding: .5em;
+    border-bottom: 1px solid #a6a6a6;
+}
+
+blockquote {
+    border-left: 5px solid #e5e5e5;
+    margin: 1em -1em 0 -1em;
+    padding: .2em 2em;
+}
+
+blockquote p {
+    margin: 0;
+    text-indent: 0;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+pre,
+code {
+    font-family: 'Source Code Pro';
+}
+
+code,
+.highlighter-rouge {
+    background: #f5f5f5;
+}
+
+code {
+    padding: .2em .5em;
+}
+
+div.highlighter-rouge {
+    margin: 1em -1em 0 -1em;
+    padding: .2em 2em;
+    overflow: auto;
+}
+
+.highlighter-rouge code {
+    padding: 0;
+}
+
+div#disqus_thread {
+    margin: 2em 0;
+}
+
+div.share-buttons {
+    margin: 2em 0;
+}
+
+div.share-button {
+    display: inline-block;
+    vertical-align: top;
+}
+
+div.footnotes {
+    margin: 2em auto;
+    border-top: 2px dotted #a6a6a6;
+}
+
+time {
+    color: #888;
+}
+
+small {
+    display: block;
+    margin: 2em 0;
+    font-size: medium;
+    text-align: center;
+}
+
+::selection {
+    color: #fff;
+    background: #000;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #000;
+}
+
+:target {
+    font-weight: bolder;
+}

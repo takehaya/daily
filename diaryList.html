@@ -1,0 +1,14 @@
+---
+layout: default
+title: 日記一覧
+---
+
+<h2>日記一覧</h2>
+<ul>
+{% for page in site.posts %}
+    <li>{% for category in page.categories %}
+      <a href="{{ site.baseurl }}/category.html#{{ category }}" title="{{ category }}">{{ category }}</a>
+    {% endfor %}
+    <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a> (<time>{{ page.date | date: '%Y-%m-%d' }}</time>)</li>
+{% endfor %}
+</ul>
